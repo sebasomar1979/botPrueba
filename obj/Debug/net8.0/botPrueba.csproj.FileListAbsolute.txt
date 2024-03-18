@@ -1,0 +1,14 @@
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\bin\Debug\net8.0\botPrueba.exe
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\bin\Debug\net8.0\botPrueba.deps.json
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\bin\Debug\net8.0\botPrueba.runtimeconfig.json
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\bin\Debug\net8.0\botPrueba.dll
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\bin\Debug\net8.0\botPrueba.pdb
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\botPrueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\botPrueba.AssemblyInfoInputs.cache
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\botPrueba.AssemblyInfo.cs
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\botPrueba.csproj.CoreCompileInputs.cache
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\botPrueba.dll
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\refint\botPrueba.dll
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\botPrueba.pdb
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\botPrueba.genruntimeconfig.cache
+C:\Users\Sebas\source\repos\botPrueba\botPrueba\obj\Debug\net8.0\ref\botPrueba.dll
