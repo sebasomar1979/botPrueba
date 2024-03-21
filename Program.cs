@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-
+using chatBotColegio;
 
 public class Estudiante
 {
@@ -25,9 +25,9 @@ public class Profesor
 }
 class Program
 {
-    static List<Estudiante> listaEstudiantes = new List<Estudiante>();
+   // static List<Estudiante> listaEstudiantes = new List<Estudiante>();
 
-    static List<Profesor> listaProfesores = new List<Profesor>();
+    //static List<Profesor> listaProfesores = new List<Profesor>();
 
     static void Main(string[] args)
     {
@@ -87,13 +87,25 @@ class Program
 
         /* Estudiante nuevoEstudiante = new Estudiante { Nombre = nombre, Apellido = apellido, Edad = edad, nota = nota};
          listaEstudiantes.Add(nuevoEstudiante);*/
+        conexion conexion = new conexion();
 
+        conexion.open()
+
+        SqlCommand cmd = new SqlCommand("INSERT INTO Estudiantes (Nombre, Apellido, Edad, Nota) VALUES (@Nombre, @Apellido, @Edad, @Nota)", conexion.SqlCon);
+        cmd.Parameters.AddWithValue("@Nombre", nombre);
+        cmd.Parameters.AddWithValue("@Apellido", apellido);
+        cmd.Parameters.AddWithValue("@Edad", edad);
+        cmd.Parameters.AddWithValue("@Nota", nota);
+
+        // Ejecutar el comando SQL
+        cmd.ExecuteNonQuery();
 
 
         Console.WriteLine("Estudiante agregado con éxito.");
     }
     static void AgregarProfesor()
     {
+      
         Console.Write("Ingrese matricula del profesor: ");
         int matricula = int.Parse(Console.ReadLine());
 
@@ -106,13 +118,25 @@ class Program
         Console.Write("Ingrese la materia del profesor: ");
         string materia = Console.ReadLine();
 
+        /*Profesor nuevoProfesor = new Profesor { Matricula = matricula, Nombre = nombre, Apellido = apellido, Materia = materia };
+        listaProfesores.Add(nuevoProfesor);*/
+        Conexion conexion = new Conexion();
 
+        conexion.Open();
 
+        // Crear un comando SQL para insertar los datos del profesor
+        SqlCommand cmd = new SqlCommand("INSERT INTO Profesores (Matricula, Nombre, Apellido, Materia) VALUES (@Matricula, @Nombre, @Apellido, @Materia)", conexion.SqlCon);
+        cmd.Parameters.AddWithValue("@Matricula", matricula);
+        cmd.Parameters.AddWithValue("@Nombre", nombre);
+        cmd.Parameters.AddWithValue("@Apellido", apellido);
+        cmd.Parameters.AddWithValue("@Materia", materia);
 
-        Profesor nuevoProfesor = new Profesor { Matricula = matricula, Nombre = nombre, Apellido = apellido, Materia = materia };
-        listaProfesores.Add(nuevoProfesor);
+        // Ejecutar el comando SQL
+        cmd.ExecuteNonQuery();
+
 
         Console.WriteLine("Profesor agregado con éxito.");
+
     }
 
     static void MostrarEstudiantes()
